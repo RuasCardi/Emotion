@@ -1,0 +1,14 @@
+# Ignorar arquivos de build do Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+# Ignorar logs e arquivos temporários
+*.log
+*.tmp
+*.csv
+# Ignorar IDEs
+.vscode/
+.idea/
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
