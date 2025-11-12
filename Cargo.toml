@@ -1,0 +1,11 @@
+[package]
+name = "signal_skin"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.27"
+cpal = "0.15"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+device_query = "1.1"
