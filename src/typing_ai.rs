@@ -18,7 +18,8 @@ impl TypingAI {
         let reader = BufReader::new(file);
         let mut intervals = Vec::new();
         let mut key_counts = Vec::new();
-        for line in reader.lines().flatten().rev().take(30) {
+        let lines: Vec<String> = reader.lines().flatten().collect();
+        for line in lines.iter().rev().take(30) {
             let parts: Vec<&str> = line.split(';').collect();
             if parts.len() >= 3 {
                 if let Ok(interval) = parts[1].parse::<u128>() {
